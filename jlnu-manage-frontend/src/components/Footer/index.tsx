@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
         },
         {
           key: 'Ant Design',
-          title: 'JLNU-Mar1f',
-          href: '',
+          title: '和作者联系',
+          href: 'https://marone-1326817243.cos.ap-beijing.myqcloud.com/wx.jpg',
           blankTarget: true,
         },
         {

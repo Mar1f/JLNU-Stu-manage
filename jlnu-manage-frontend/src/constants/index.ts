@@ -1,13 +1,13 @@
 /**
  * 本地后端地址
  */
-export const BACKEND_HOST_LOCAL = "http://localhost:8120";
+export const BACKEND_HOST_LOCAL = "http://localhost:8220";
 
 /**
  * 线上后端地址
  */
-export const BACKEND_HOST_PROD = "https://yupi.icu";
-
+export const BACKEND_HOST_PROD = "http://jlnustu.stars22.xyz:8220";
+//http://jlnustu.stars22.xyz:8220
 /**
  * COS访问地址
  */

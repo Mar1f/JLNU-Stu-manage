@@ -65,7 +65,7 @@ const UserRegisterPage: React.FC = () => {
           }}
           logo={<img alt="logo" style={{ height: '100%' }} src="/logo.png" />}
           title="JLNU-学生管理中心"
-          subTitle={'代码生成器在线制作共享，大幅提升开发效率'}
+          subTitle={'JLNU-- Mar1f'}
           initialValues={{
             autoLogin: true,
           }}

@@ -150,7 +150,7 @@ const GeneratorAddPage: React.FC = () => {
               options={[
                 { value: '软件工程', label: '软件工程' },
                 { value: '网络空间安全', label: '网络空间安全' },
-                { value: '数据与数据科学', label: '数据与数据科学' },
+                { value: '大数据科学与技术', label: '大数据科学与技术' },
                 { value: '计算机科学与技术', label: '计算机科学与技术' },
               ]}
             />

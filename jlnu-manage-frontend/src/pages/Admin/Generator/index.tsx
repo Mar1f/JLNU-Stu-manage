@@ -22,7 +22,7 @@ const GeneratorAdminPage: React.FC = () => {
   // 是否显示更新窗口
   const [updateModalVisible, setUpdateModalVisible] = useState<boolean>(false);
   const actionRef = useRef<ActionType>();
-  // 当前代码生成器点击的数据
+  // 当前点击的数据
   const [currentRow, setCurrentRow] = useState<API.Generator>();
 
   /**
@@ -52,12 +52,12 @@ const GeneratorAdminPage: React.FC = () => {
    * 表格列配置
    */
   const columns: ProColumns<API.Generator>[] = [
-    {
-      title: 'id',
-      dataIndex: 'id',
-      valueType: 'text',
-      hideInForm: true,
-    },
+    // {
+    //   title: 'id',
+    //   dataIndex: 'id',
+    //   valueType: 'text',
+    //   hideInForm: true,
+    // },
     {
       title: '学院',
       dataIndex: 'name',
@@ -66,13 +66,19 @@ const GeneratorAdminPage: React.FC = () => {
     {
       title: '专业',
       dataIndex: 'description',
-      valueType: 'textarea',
+      valueType: 'select',
+      valueEnum: {
+        '软件工程': { text: '软件工程' },
+        '网络空间安全': { text: '网络空间安全' },
+        '大数据科学与技术': { text: '大数据科学与技术' },
+        '计算机科学与技术': { text: '计算机科学与技术' },
+      },
     },
-    {
-      title: '基础包',
-      dataIndex: 'basePackage',
-      valueType: 'text',
-    },
+    // {
+    //   title: '基础包',
+    //   dataIndex: 'basePackage',
+    //   valueType: 'text',
+    // },
     {
       title: '班级',
       dataIndex: 'version',
@@ -111,35 +117,38 @@ const GeneratorAdminPage: React.FC = () => {
       },
       hideInSearch: true,
     },
-    {
-      title: '文件配置',
-      dataIndex: 'fileConfig',
-      valueType: 'jsonCode',
-    },
-    {
-      title: '模型配置',
-      dataIndex: 'modelConfig',
-      valueType: 'jsonCode',
-    },
-    {
-      title: '产物包路径',
-      dataIndex: 'distPath',
-      valueType: 'text',
-    },
+    // {
+    //   title: '文件配置',
+    //   dataIndex: 'fileConfig',
+    //   valueType: 'jsonCode',
+    // },
+    // {
+    //   title: '模型配置',
+    //   dataIndex: 'modelConfig',
+    //   valueType: 'jsonCode',
+    // },
+    // {
+    //   title: '产物包路径',
+    //   dataIndex: 'distPath',
+    //   valueType: 'text',
+    // },
     {
       title: '状态',
       dataIndex: 'status',
       valueEnum: {
         0: {
-          text: '默认',
+          text: '正常',
         },
+        1:{
+          text: '停止招生',
+        }
       },
     },
-    {
-      title: '创建学生',
-      dataIndex: 'userId',
-      valueType: 'text',
-    },
+    // {
+    //   title: '创建学生',
+    //   dataIndex: 'userId',
+    //   valueType: 'text',
+    // },
     {
       title: '创建时间',
       sorter: true,

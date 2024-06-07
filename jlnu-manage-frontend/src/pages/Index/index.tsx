@@ -119,9 +119,8 @@ const IndexPage: React.FC = () => {
           });
         }}
       >
-        <ProFormSelect label="标签" name="tags" mode="tags" />
-        <ProFormText label="名称" name="name" />
-        <ProFormText label="描述" name="description" />
+        <ProFormText label="学院" name="name" />
+        <ProFormText label="专业" name="description" />
       </QueryFilter>
 
       <div style={{ marginBottom: 24 }} />
